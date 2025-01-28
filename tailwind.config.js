@@ -7,6 +7,9 @@ module.exports = {
   darkMode: 'class', // Use 'media' if you prefer system-based dark mode
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'], // Add Roboto to the theme
+      },
       height: {
         '94': '22rem',
       },

@@ -11,7 +11,7 @@
         <div class="flex justify-center items-center py-6 md:justify-start md:space-x-10">
             <!-- STORE NAME / STORE LOGO -->
             <div class="flex justify-start lg:flex-1 truncate">
-                <h1 class="text-xl font-bold truncate">{{ shop.name }}</h1>
+                <h1 class="text-xl font-medium truncate uppercase">{{ shop.name }}</h1>
             </div>
 
             <div class="-mr-2 -my-2 ml-3 md:hidden">
@@ -26,7 +26,7 @@
                     {% if link.links != blank %}
                         {% assign link_handle = link.handle | replace: '-', '_' %}
                         <div class="relative" x-data="{ {{ link_handle }}: false }">
-                            <button type="button" x-on:click="{{ link_handle }} = ! {{ link_handle }}" class="inline-flex items-center">
+                            <button type="button" x-on:click="{{ link_handle }} = ! {{ link_handle }}" class="inline-flex text-gray-500 items-center uppercase">
                                 {{ link.title }}
                                 {% render 'icon-dropdown' %}
                             </button>
@@ -44,7 +44,7 @@
                                         {% for childlink in link.links %}
                                             <a href="{{ childlink.url }}" class="-m-3 p-3 flex items start rounded-lg hover:bg-gray-100">
                                                 <div class="ml-4">
-                                                    <p class="text-gray-900 text-base font-medium">
+                                                    <p class="text-gray-900 text-base uppercase">
                                                         {{ childlink.title }}
                                                     </p>
                                                 </div>
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     {% else %}
-                        <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900">{{ link.title }}</a>
+                        <a href="{{ link.url }}" class="text-base text-gray-500 hover:text-gray-900 uppercase">{{ link.title }}</a>
                     {% endif %}
                 {% endfor %}
             </nav>
@@ -70,11 +70,11 @@
 
                 {% if shop.customer_accounts_enabled %}
                     {% if customer %}
-                        <a href="{{ routes.account_url }}" class="text-base text-gray-500 hover:text-gray-900">Account</a>
-                        {{ 'Log out' | customer_logout_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900"' }}
+                        <a href="{{ routes.account_url }}" class="text-base text-gray-500 hover:text-gray-900 uppercase">{% render 'icon-account' %}</a>
+                        {{ 'Log out' | customer_logout_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900 uppercase"' }}
                     {% else %}
-                        {{ 'Log in ' | customer_login_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900"' }}
-                        {{ 'Register' | customer_register_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900"' }}
+                        {{ 'Log in ' | customer_login_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900 uppercase"' }}
+                        {{ 'Register' | customer_register_link | replace: '<a', '<a class="text-base text-gray-500 hover:text-gray-900 uppercase"' }}
                     {% endif %}
                 {% endif %}
             </div>
@@ -88,7 +88,7 @@
 
                         <div class="flex items-center justify-between pb-3">
                             <div>
-                                <h1 class="text-lg text-gray-500">{{ section.settings.mobile_menu_title }}</h1>
+                                <h1 class="text-lg text-gray-500 uppercase">{{ section.settings.mobile_menu_title }}</h1>
                             </div>
                             <div class="-mr-2">
                                 <button x-on:click="mobileMenuOpen = false" type="button" class="bg-white rounded-md p-2 text-gray-500">
@@ -99,26 +99,26 @@
 
                         <!-- NAVIGATION LINKS FOR MOBILE MENU -->
                         <div class="pt-3">
-                            <nav class="grid gap-y-7">
+                            <nav class="grid gap-y-7 uppercase">
                                 {% for link in main_menu_linklist %}
                                     {% if link.links != blank %}
                                     {% assign mobile_link_handle = link.handle | replace: '-', '_' %}
                                         <div class="relative" x-data="{ {{ mobile_link_handle }}: false }">
-                                            <button x-on:click="{{ mobile_link_handle }} = ! {{ mobile_link_handle }}" type="button" class="text-base text-gray-500 hover:text-gray-900 flex items-center justify-between w-full">
+                                            <button x-on:click="{{ mobile_link_handle }} = ! {{ mobile_link_handle }}" type="button" class="text-base text-gray-500 hover:text-gray-900 flex items-center justify-between w-full uppercase">
                                                 <div>{{ link.title }}</div>
                                                 {% render 'icon-dropdown' %}
                                             </button>
 
                                             <div x-show="{{ mobile_link_handle }}" class="grid gap-y-7 py-3">
                                                 {% for childlink in link.links %}
-                                                    <a href="{{ childlink.url }}" class="-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
-                                                        <span class="ml-3 text-base font-medium text-gray-500">{{ childlink.title }}</span>
+                                                    <a href="{{ childlink.url }}" class="-m-3 p-3 mt-2 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50 uppercase">
+                                                        <span class="ml-3 text-base text-gray-500">{{ childlink.title }}</span>
                                                     </a>
                                                 {% endfor %}
                                             </div>
                                         </div>
                                     {% else %}
-                                        <a href="{{ link.url }}" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50">
+                                        <a href="{{ link.url }}" class="-m-3 p-3 flex items-center rounded-md text-gray-500 hover:text-gray-900 hover:bg-gray-50 uppercase">
                                             {{ link.title }}
                                         </a>
 
