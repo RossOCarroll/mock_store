@@ -8,7 +8,51 @@
  * ------------------------------------------------------------
  */
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu_title": "Menu",
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "navigation_Uf9eGa": {
+            "type": "navigation",
+            "settings": {
+              "linklist": "main-menu"
+            }
+          },
+          "newsletter_gn7qQk": {
+            "type": "newsletter",
+            "settings": {
+              "heading": "Subscribe to our newsletter",
+              "text": ""
+            }
+          },
+          "text_fa7BRE": {
+            "type": "text",
+            "settings": {
+              "heading": "About Us",
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "navigation_Uf9eGa",
+          "newsletter_gn7qQk",
+          "text_fa7BRE"
+        ],
+        "settings": {
+          "copyright": "© 2024 Your Store"
+        }
+      }
+    },
+    "content_for_index": []
+  },
   "presets": {
     "Default": {}
   }
