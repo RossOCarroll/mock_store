@@ -1,4 +1,4 @@
-<footer class="bg-gray-800 text-white">
+<footer class="text-gray-600 relative bg-white">
   <div class="max-w-7xl mx-auto px-4 py-6">
     <nav class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
@@ -10,19 +10,19 @@
             {% when 'navigation' %}
               <ul>
                 {% for link in block.settings.linklist.links %}
-                  <li><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
+                  <li class="text-base text-gray-500 hover:text-gray-900 uppercase"><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
                 {% endfor %}
               </ul>
 
             {% when 'newsletter' %}
-              <p>{{ block.settings.text }}</p>
+              <p class="text-base text-gray-500 hover:text-gray-900 uppercase">{{ block.settings.text }}</p>
               <form action="" method="post">
                 <input type="email" placeholder="Enter your email" class="p-2 text-black">
                 <button type="submit" class="bg-blue-500 p-2">Subscribe</button>
               </form>
 
             {% when 'text' %}
-              <p>{{ block.settings.text }}</p>
+              <p class="text-base text-gray-500 hover:text-gray-900 uppercase">{{ block.settings.text }}</p>
 
           {% endcase %}
         </div>
