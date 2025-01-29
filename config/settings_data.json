@@ -37,7 +37,7 @@
             "type": "text",
             "settings": {
               "heading": "About Us",
-              "text": ""
+              "text": "<p>All product imagery and descriptions belong to and have been graciously provided by<a href=\"https://www.st-agni.com/\" target=\"_blank\" title=\"St Angi\">St. Agni</a>and are displayed for demonstration purposes only. You can buy their products on their<a href=\"https://www.st-agni.com/\" target=\"_blank\" title=\"St Angi\">online store</a>.</p>"
             }
           }
         },
