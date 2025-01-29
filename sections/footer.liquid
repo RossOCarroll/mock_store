@@ -1,16 +1,16 @@
-<footer class="text-gray-600 relative bg-white">
+<footer  class="relative bg-white text-gray-500">
   <div class="max-w-7xl mx-auto px-4 py-6">
     <nav class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
       
       {% for block in section.blocks %}
         <div class="footer-column">
-          <h2 class="font-bold">{{ block.settings.heading | default: "Block Title" }}</h2>
+          <h2 class="font-bold">{{ block.settings.heading }}</h2>
 
           {% case block.type %}
             {% when 'navigation' %}
               <ul>
                 {% for link in block.settings.linklist.links %}
-                  <li class="text-base text-gray-500 hover:text-gray-900 uppercase"><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
+                  <li class="text-base text-gray-500 hover:text-gray-900"><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
                 {% endfor %}
               </ul>
 
@@ -43,66 +43,53 @@
     "settings": [
       {
         "id": "copyright",
-        "type": "text",
         "label": "Copyright text",
-        "default": "© 2024 Your Store"
+        "type": "text"
       }
     ],
     "max_blocks": 5,
     "blocks": [
       {
+        "type": "newsletter",
+        "name": "Newsletter",
+        "settings": [
+          {
+            "id": "heading",
+            "type": "text",
+            "label": "Heading text"
+          },
+          {
+            "id": "text",
+            "type": "richtext",
+            "label": "Body text"
+          }
+        ]
+      },
+      {
+        "name": "Text",
+        "type": "text",
+        "settings": [
+          {
+            "id": "heading",
+            "type": "text",
+            "label": "Heading text"
+          },
+          {
+            "id": "text",
+            "type": "richtext",
+            "label": "Body text"
+          }
+        ]
+      },
+      {
+        "name": "Navigation column",
         "type": "navigation",
-        "name": "Navigation Column",
         "settings": [
           {
             "type": "link_list",
             "id": "linklist",
-            "label": "Navigation Menu"
+            "label": "Navigation menu"
           }
-        ]
-      },
-      {
-        "type": "newsletter",
-        "name": "Newsletter Signup",
-        "settings": [
-          {
-            "id": "heading",
-            "type": "text",
-            "label": "Heading",
-            "default": "Subscribe to our newsletter"
-          },
-          {
-            "id": "text",
-            "type": "richtext",
-            "label": "Description"
-          }
-        ]
-      },
-      {
-        "type": "text",
-        "name": "Text Block",
-        "settings": [
-          {
-            "id": "heading",
-            "type": "text",
-            "label": "Heading",
-            "default": "About Us"
-          },
-          {
-            "id": "text",
-            "type": "richtext",
-            "label": "Content"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Footer",
-        "blocks": [
-          { "type": "navigation" },
-          { "type": "newsletter" },
-          { "type": "text" }
         ]
       }
     ]

@@ -8,51 +8,7 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "mobile_menu_title": "Menu",
-          "menu": "main-menu"
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "navigation_AgU6iE": {
-            "type": "navigation",
-            "settings": {
-              "linklist": "main-menu"
-            }
-          },
-          "newsletter_VLzkth": {
-            "type": "newsletter",
-            "settings": {
-              "heading": "Subscribe to our newsletter",
-              "text": ""
-            }
-          },
-          "text_RMRP9A": {
-            "type": "text",
-            "settings": {
-              "heading": "About Us",
-              "text": "<p>COS offers a wardrobe of ready-to-wear and accessories for a life well dressed. Rooted in luxury design and compelling fashion movements, the collection pays meticulous attention to sustainable craftsmanship, quality and a superior colour palette that transcends time. The creative soul of the brand is visualised through original storytelling, seasonal runway shows and contemporary culture to create an experience beyond the expected.</p>"
-            }
-          }
-        },
-        "block_order": [
-          "navigation_AgU6iE",
-          "newsletter_VLzkth",
-          "text_RMRP9A"
-        ],
-        "settings": {
-          "copyright": "© 2024 Mock Store"
-        }
-      }
-    },
-    "content_for_index": []
-  },
+  "current": "Default",
   "presets": {
     "Default": {}
   }
