@@ -9,16 +9,12 @@
  */
 {
   "sections": {
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "New Arivals",
-        "featured_collection": "all",
-        "number_of_products_to_show": 6
+      "featured-collection": {
+          "type": "featured-collection",
+          "settings": {
+              "featured_collection": "all"
+          }
       }
-    }
   },
-  "order": [
-    "featured-collection"
-  ]
+  "order": ["featured-collection"]
 }
