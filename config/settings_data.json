@@ -37,7 +37,7 @@
             "type": "newsletter",
             "settings": {
               "heading": "MOCK Newsletter",
-              "text": ""
+              "text": "<p>Subscribe to our news letter and recieve 10% off your purchace</p>"
             }
           }
         },
