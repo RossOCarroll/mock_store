@@ -20,7 +20,7 @@
       "footer": {
         "type": "footer",
         "settings": {
-          "footer_menu": ""
+          "footer_menu": "footer"
         }
       }
     },
