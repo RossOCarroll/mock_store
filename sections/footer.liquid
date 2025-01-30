@@ -10,7 +10,7 @@
             {% when 'navigation' %}
               <ul>
                 {% for link in block.settings.linklist.links %}
-                  <li class="text-base text-gray-500 hover:text-gray-900"><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
+                  <li class="text-lg text-gray-500 hover:text-gray-900"><a href="{{ link.url }}" class="hover:underline">{{ link.title }}</a></li>
                 {% endfor %}
               </ul>
 
@@ -18,7 +18,7 @@
               <p class="text-base text-gray-500 hover:text-gray-900 uppercase">{{ block.settings.text }}</p>
               <form action="" method="post">
                 <input type="email" placeholder="Enter your email" class="p-2 text-black">
-                <button type="submit" class="bg-blue-500 p-2">Subscribe</button>
+                <button class="bg-gray-900 hover:bg-gray-700 text-white px-4 py-2 border-2 border-gray-700 rounded-md" type="submit">Subscribe</button>
               </form>
 
             {% when 'text' %}
