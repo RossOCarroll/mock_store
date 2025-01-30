@@ -36,8 +36,8 @@
           "newsletter_LANtKP": {
             "type": "newsletter",
             "settings": {
-              "heading": "",
-              "text": ""
+              "heading": "Subscribe to our newsletter",
+              "text": "<p>10% off + free shipping<br/>on your first order.</p>"
             }
           }
         },
