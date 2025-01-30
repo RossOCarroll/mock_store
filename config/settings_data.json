@@ -23,14 +23,14 @@
           "navigation_d4xeqD": {
             "type": "navigation",
             "settings": {
-              "linklist": ""
+              "linklist": "main-menu"
             }
           },
           "text_g7dPGC": {
             "type": "text",
             "settings": {
-              "heading": "",
-              "text": ""
+              "heading": "About us",
+              "text": "<p>MOCK offers a wardrobe of ready-to-wear and accessories for a life well dressed. Rooted in luxury design and compelling fashion movements, the collection pays meticulous attention to sustainable craftsmanship, quality and a superior colour palette that transcends time. The creative soul of the brand is visualised through original storytelling, seasonal runway shows and contemporary culture to create an experience beyond the expected.</p>"
             }
           },
           "newsletter_jdAFbg": {
