@@ -5,7 +5,7 @@
         assign main_menu_linklist = section.settings.menu.links
     endif
 %}
-
+                <p>Hello</p>
 <div class="relative bg-white" x-data="{ mobileMenuOpen: false, searchBarOpen: false }" x-cloak>
     <div class="mx-auto px-4 sm:px-6">
         <div class="flex justify-start items-center py-6 md:space-x-10">
@@ -21,6 +21,7 @@
             </div>
             <!-- NAVIGATION MENU -->
             <nav class="hidden md:flex justify-start space-x-10">
+
                 {% for link in main_menu_linklist %}
                     {% if link.links != blank %}
                         {% assign link_handle = link.handle | replace: '-', '_' %}
