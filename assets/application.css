@@ -958,6 +958,10 @@ video {
   height: 100vh;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .min-h-80 {
   min-height: 20rem;
 }
@@ -1045,6 +1049,10 @@ video {
 
 .flex-auto {
   flex: 1 1 auto;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .table-auto {
