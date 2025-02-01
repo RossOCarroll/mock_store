@@ -8,7 +8,51 @@
  * ------------------------------------------------------------
  */
 {
-  "current": "Default",
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "mobile_menu_title": "Menu",
+          "menu": "main-menu"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "navigation_4zahr4": {
+            "type": "navigation",
+            "settings": {
+              "linklist": "main-menu"
+            }
+          },
+          "text_3xrzJz": {
+            "type": "text",
+            "settings": {
+              "heading": "",
+              "text": ""
+            }
+          },
+          "newsletter_yzi8d4": {
+            "type": "newsletter",
+            "settings": {
+              "heading": "",
+              "text": ""
+            }
+          }
+        },
+        "block_order": [
+          "navigation_4zahr4",
+          "text_3xrzJz",
+          "newsletter_yzi8d4"
+        ],
+        "settings": {
+          "copyright": "© 2024 MOCK Store"
+        }
+      }
+    },
+    "content_for_index": []
+  },
   "presets": {
     "Default": {}
   }
