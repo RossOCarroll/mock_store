@@ -8,51 +8,7 @@
  * ------------------------------------------------------------
  */
 {
-  "current": {
-    "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "mobile_menu_title": "Menu",
-          "menu": "main-menu"
-        }
-      },
-      "footer": {
-        "type": "footer",
-        "blocks": {
-          "navigation_4zahr4": {
-            "type": "navigation",
-            "settings": {
-              "linklist": "main-menu"
-            }
-          },
-          "text_3xrzJz": {
-            "type": "text",
-            "settings": {
-              "heading": "ABOUT US",
-              "text": "<p>MOCK offers a wardrobe of ready-to-wear and accessories for a life well dressed. Rooted in luxury design and compelling fashion movements, the collection pays meticulous attention to sustainable craftsmanship, quality and a superior colour palette that transcends time. The creative soul of the brand is visualised through original storytelling, seasonal runway shows and contemporary culture to create an experience beyond the expected.</p>"
-            }
-          },
-          "newsletter_yzi8d4": {
-            "type": "newsletter",
-            "settings": {
-              "heading": "",
-              "text": ""
-            }
-          }
-        },
-        "block_order": [
-          "navigation_4zahr4",
-          "text_3xrzJz",
-          "newsletter_yzi8d4"
-        ],
-        "settings": {
-          "copyright": "© 2024 MOCK Store"
-        }
-      }
-    },
-    "content_for_index": []
-  },
+  "current": "Default",
   "presets": {
     "Default": {}
   }
