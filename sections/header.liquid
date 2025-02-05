@@ -10,10 +10,13 @@
         <!-- STORE LOGO (CENTERED AT THE TOP) -->
         <div class="flex justify-center py-6">
             <a href="{{ shop.url }}">
-                <img src="{{  'logo.png' | asset_url }}" alt="{{ shop.name }}">                
+                <img 
+                    class="w-48 h-auto object-contain"
+                    src="{{ 'logo.png' | asset_url }}" 
+                    alt="{{ shop.name }}"
+                >
             </a>
         </div>
-
         <!-- NAVIGATION MENU AND CART/ACCOUNT LINKS (IN THE SAME ROW) -->
         <div class="flex items-center justify-between"> <!-- Flex container for nav and cart/account links -->
             <!-- NAVIGATION MENU (LEFT-ALIGNED) -->
