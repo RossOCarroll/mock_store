@@ -9,7 +9,9 @@
     <div class="mx-auto px-4 sm:px-6">
         <!-- STORE LOGO (CENTERED AT THE TOP) -->
         <div class="flex justify-center py-6">
-            <img src="{{  'logo.png' | asset_url }}" alt="{{ shop.name }}">
+            <a href="{{ shop.url }}">
+                <img src="{{  'logo.png' | asset_url }}" alt="{{ shop.name }}">                
+            </a>
         </div>
 
         <!-- NAVIGATION MENU AND CART/ACCOUNT LINKS (IN THE SAME ROW) -->
