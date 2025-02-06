@@ -9,12 +9,16 @@
  */
 {
   "sections": {
-      "featured-collection": {
-          "type": "featured-collection",
-          "settings": {
-              "featured_collection": "all"
-          }
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New Arrivals",
+        "featured_collection": "womens",
+        "number_of_products_to_show": 6
       }
+    }
   },
-  "order": ["featured-collection"]
+  "order": [
+    "featured-collection"
+  ]
 }
