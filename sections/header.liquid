@@ -20,7 +20,7 @@
         <!-- NAVIGATION MENU AND CART/ACCOUNT LINKS (IN THE SAME ROW) -->
         <div class="flex items-center justify-between"> <!-- Flex container for nav and cart/account links -->
             <!-- NAVIGATION MENU (LEFT-ALIGNED) -->
-            <nav class="hidden md:flex justify-start space-x-10">
+            <nav class="hidden md:flex md:text-sm justify-start space-x-10">
                 {% for link in main_menu_linklist %}
                     {% if link.links != blank %}
                         {% assign link_handle = link.handle | replace: '-', '_' %}
