@@ -24,8 +24,11 @@
                 <div class="hidden md:block">
                     {% for media in product.media %}
                         <div class="h-100 overflow-hidden p-2">
-                            {% render 'product-media', media: media %}
+                            <a href="#" onclick="openLightbox('{{ media.preview_image | img_url: 'master' }}'); return false;">
+                                {% render 'product-media', media: media %}
+                            </a>
                         </div>
+                        
                     {% endfor %}
                 </div>
 
@@ -142,6 +145,35 @@
             </div>
         </div>
     </div>
+
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+    <div class="relative max-w-4xl w-full p-4">
+        <button class="absolute top-4 right-4 text-white text-2xl" onclick="closeLightbox()">&times;</button>
+        <img id="lightbox-image" src="" class="w-full h-auto object-contain rounded-lg shadow-lg">
+    </div>
+</div>
+
+<script>
+    function openLightbox(imageUrl) {
+        document.getElementById('lightbox-image').src = imageUrl;
+        document.getElementById('lightbox').classList.remove('hidden');
+    }
+
+    function closeLightbox() {
+        document.getElementById('lightbox').classList.add('hidden');
+    }
+
+    // Close when clicking anywhere on the lightbox
+    document.getElementById('lightbox').addEventListener('click', closeLightbox);
+
+    // Close when pressing Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            closeLightbox();
+        }
+    });
+</script>
+
 
     <style>
         .media model-viewer, .media > * {
