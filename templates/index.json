@@ -16,9 +16,18 @@
         "featured_collection": "womens",
         "number_of_products_to_show": 6
       }
+    },
+    "featured_collection_Bzak3c": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Sale",
+        "featured_collection": "sale",
+        "number_of_products_to_show": 6
+      }
     }
   },
   "order": [
-    "featured-collection"
+    "featured-collection",
+    "featured_collection_Bzak3c"
   ]
 }
