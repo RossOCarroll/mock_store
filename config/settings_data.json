@@ -33,6 +33,13 @@
               "text": "<p>Sign up for our news letter and get 10% your next order</p>"
             }
           },
+          "text_mQzcPP": {
+            "type": "text",
+            "settings": {
+              "heading": "Sustainability",
+              "text": "<p>Sustainability is about meeting the needs of the present without compromising the ability of future generations to meet their own needs. It encompasses environmental responsibility, economic stability, and social equity, ensuring that we use resources wisely while protecting the planet.</p>"
+            }
+          },
           "text_AP6f8z": {
             "type": "text",
             "settings": {
@@ -44,6 +51,7 @@
         "block_order": [
           "navigation_X7e4Kg",
           "newsletter_TtdKcP",
+          "text_mQzcPP",
           "text_AP6f8z"
         ],
         "settings": {
